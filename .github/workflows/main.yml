@@ -9,6 +9,12 @@ jobs:
     steps:
       - name: "Minha step"
         run: echo "Start my life"
+  segundo-job:
+    name: "Instalação da versão do nodeJS"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "verificação da versão do nodeJS atual"
+        run: node --version
       
 
           
