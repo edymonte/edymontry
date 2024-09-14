@@ -19,7 +19,9 @@ jobs:
         run: |
       - uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20.0'
+      - name: "verificação da versão do nodeJS depois da instalação"
+        run: node --version
       
 
           
