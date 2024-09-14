@@ -10,6 +10,7 @@ jobs:
       - name: "Minha step"
         run: echo "Start my life"
   segundo-job:
+    needs: primeiro-job
     name: "Instalação da versão do nodeJS"
     runs-on: ubuntu-latest
     steps:
