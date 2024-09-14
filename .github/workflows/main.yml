@@ -1,0 +1,14 @@
+name: My secound pipeline
+on:
+  push:
+    branches: ["main"]
+jobs:
+  primeiro-job:
+    name: "Teste de job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Minha step"
+        run: echo "Start my life"
+      
+
+          
