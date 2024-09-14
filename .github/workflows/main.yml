@@ -15,16 +15,11 @@ jobs:
     steps:
       - name: "verificação da versão do nodeJS atual"
         run: node --version
-  terceiro-job:
-    name: "Instalação da versão do nodeJS"
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Instalação da versão do nodeJS"
+      - name: "Instalação da versão 14 do nodeJS"
         run: |
-          curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-          sudo apt-get install -y nodejs
-      - name: "verificação da versão do nodeJS atual"
-        run: node --version
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '14'
       
 
           
